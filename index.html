@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amr Elsetouhy — Odoo Construction Modules</title>
+<meta name="description" content="Odoo 18 modules for construction companies: subcontract and main contract payment certificates (مستخلصات), appendices and purchase order adjustments.">
+<style>
+  :root { --green:#0a5540; --green2:#1d9e75; --text:#1a1a1a; --muted:#5f6b75; --line:#d4eddf; --bg:#f6faf8; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: Arial, "Segoe UI", Tahoma, sans-serif; color:var(--text); background:#fff; line-height:1.6; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { background: linear-gradient(135deg, var(--green) 0%, var(--green2) 100%); color:#fff; padding: 56px 0 48px; }
+  header h1 { margin:0 0 8px; font-size: 34px; }
+  header p { margin: 0; font-size: 17px; opacity: .93; max-width: 720px; }
+  header .ar { margin-top: 14px; }
+  .ar { direction: rtl; text-align: right; }
+  .btns { margin-top: 24px; display:flex; flex-wrap:wrap; gap:10px; }
+  .btn { display:inline-block; padding: 11px 18px; border-radius: 8px; font-weight: 700; font-size: 15px; text-decoration: none; color:#fff; background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.35); }
+  .btn.wa { background:#25d366; border-color:#25d366; }
+  section { padding: 44px 0 8px; }
+  h2 { font-size: 24px; margin: 0 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 22px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+  .card { border:1px solid var(--line); border-left: 5px solid var(--green2); border-radius: 12px; padding: 22px; background:#fff; }
+  .eyebrow { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--green2); }
+  .card h3 { margin: 6px 0 8px; font-size: 19px; color: var(--green); }
+  .card p { margin: 0 0 10px; color:#495057; font-size: 15px; }
+  .card ul { margin: 0 0 12px; padding-left: 18px; font-size: 14.5px; }
+  .card .ar { font-size: 14.5px; color:#495057; }
+  .tag { display:inline-block; font-size:12px; padding:3px 10px; border-radius: 20px; background: var(--bg); border:1px solid var(--line); color: var(--green); margin: 0 6px 6px 0; }
+  .contact { background: var(--bg); border:1px solid var(--line); border-radius: 14px; padding: 28px; margin: 36px 0 40px; text-align:center; }
+  .contact .btns { justify-content:center; }
+  .contact .btn { color:#fff; background: var(--green); border-color: var(--green); }
+  .contact .btn.wa { background:#25d366; border-color:#25d366; }
+  .contact a.plain { color: var(--green); }
+  footer { color: var(--muted); font-size: 13px; text-align:center; padding: 0 0 30px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Amr Elsetouhy</h1>
+    <p>Odoo 18 modules for construction and contracting companies: contracts, appendices and progress payment certificates, for subcontractors and main contractors.</p>
+    <p class="ar">موديولات أودو 18 لشركات المقاولات: العقود والملاحق والمستخلصات، لمقاولي الباطن وللمقاول الرئيسي.</p>
+    <div class="btns">
+      <a class="btn wa" href="https://wa.me/201119005121" target="_blank">WhatsApp / واتساب</a>
+      <a class="btn" href="mailto:amr.abdelaziz@hotmail.com">Email / البريد</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Modules</h2>
+    <p class="sub">Built to work together. Full Arabic interface.</p>
+    <div class="grid">
+
+      <div class="card">
+        <div class="eyebrow">Subcontractors · Purchase</div>
+        <h3>Construction Subcontracting &amp; Payment Certificates</h3>
+        <p>Pay your subcontractors by certified progress.</p>
+        <ul>
+          <li>Subcontracts and appendices with sections and service items</li>
+          <li>Sequential certificates: previous and current quantities, due ratio</li>
+          <li>Max overage guard with Force Override</li>
+          <li>Vendor bills created from certificates</li>
+        </ul>
+        <p class="ar">مستخلصات مقاولي الباطن: العقود والملاحق والمستخلصات الجارية وفواتير الموردين.</p>
+        <span class="tag">Odoo 18</span><span class="tag">مستخلصات</span>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">Main contractors · Sales</div>
+        <h3>Construction Main Contract Certificates</h3>
+        <p>Certify your work to the project owner and invoice it.</p>
+        <ul>
+          <li>Main contracts with your client, with sections and items</li>
+          <li>Variations / appendices added to the contract</li>
+          <li>Progress certificates with previous and current quantities</li>
+          <li>Customer invoices created from certificates</li>
+        </ul>
+        <p class="ar">مستخلصات المالك: عقود المالك وملاحقها والمستخلصات الجارية وفواتير العملاء.</p>
+        <span class="tag">Odoo 18</span><span class="tag">مستخلصات المالك</span>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">Works with both</div>
+        <h3>Purchase Order Adjustments</h3>
+        <p>Adjust a certificate before you bill it.</p>
+        <ul>
+          <li>Deductions: retention, delay penalties, advance recovery</li>
+          <li>Additions: bonuses, extra work, price escalation</li>
+          <li>Fixed amount or %, with a live preview</li>
+          <li>Added to the bill automatically</li>
+        </ul>
+        <p class="ar">خصومات وإضافات على المستخلص: التأمين المحجوز، الغرامات، استرداد الدفعة المقدمة، الحوافز.</p>
+        <span class="tag">Odoo 18</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="contact">
+    <h2>Contact &amp; Support</h2>
+    <p class="sub">Questions before buying, installation help or a customization? Get in touch.</p>
+    <p class="ar sub" style="text-align:center">تواصل معنا للاستفسار قبل الشراء، أو للمساعدة في التثبيت، أو لطلب تخصيص إضافي.</p>
+    <div class="btns">
+      <a class="btn wa" href="https://wa.me/201119005121" target="_blank">WhatsApp / واتساب</a>
+      <a class="btn" href="mailto:amr.abdelaziz@hotmail.com">Email / البريد</a>
+    </div>
+    <p style="margin:16px 0 4px">Email: <a class="plain" href="mailto:amr.abdelaziz@hotmail.com">amr.abdelaziz@hotmail.com</a> · <a class="plain" href="mailto:amr.abdelaziz.setouhy@gmail.com">amr.abdelaziz.setouhy@gmail.com</a></p>
+    <p style="margin:4px 0">Phone (Egypt): <a class="plain" href="tel:+201119005121">+20 111 900 5121</a> · <a class="plain" href="tel:+201558266417">+20 155 826 6417</a></p>
+  </div>
+</div>
+
+<footer>© Amr Elsetouhy · Odoo 18 construction modules</footer>
+</body>
+</html>
